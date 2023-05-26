@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 48px;
+  background-color: #222;
+}
+
+.gradientColorText {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#fff, #0039a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+li {
+  list-style: none;
+  color: #ddd;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 200ms;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.activeTab {
+  color: #fff;
+}
+
+button {
+  background-color: #0039a6;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  width: 150px;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+button:hover {
+  background-color: #fff;
+  border-color: #0039a6;
+  color: #0039a6;
+}
+
+.coverMainContainer {
+    position: relative;
+}
+
+.coverBanner {
+  min-height: 91vh;
+  background-image: url("./images/iceCream.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.coverContent {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  word-spacing: 0.5rem;
+  font-size: 24px;
+}
+
+.secondLastContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E7E8;
+}
+
+.secondLastContent {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSection {
+    width: 50%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.leftSection > h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.leftSection > h2 {
+    color: #FF00FF;
+    word-spacing: 0.5rem;
+    margin-bottom: 30px;
+}
+
+.leftSection > p {
+    color: gray;
+}
+
+.rightSection {
+    width: 35%;
+}
+
+.footerMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.footerContent {
+    background-color: #F1437A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 0 40px;
+}
+
+.footerContent > div {
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    padding: 40px 0;
+    transition-duration: 200ms;
+}
+
+.footerContent i {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.footerContent p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footerContent > div:hover {
+    background-color: white;
+    color: #F1437A;
+}
+
+.copyrightClaim {
+    background-color: #333;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
